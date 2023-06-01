@@ -5,6 +5,7 @@ defmodule PhoebeWeb.AuthenticationController do
     jwt_secret = Application.fetch_env!(:phoebe, :jwt_secret)
     token = Phoenix.Token.sign(conn, "jwt_secret", jwt_secret)
     authenticated = check_authentication(token)
+    IO.puts jwt_secret
     json(conn, %{ authenticated: authenticated })
   end
 

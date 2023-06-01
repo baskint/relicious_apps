@@ -45,6 +45,8 @@ gem "bootsnap", require: false
 gem "jwt"
 gem "httparty"
 
+gem "dotenv-rails", require: "dotenv/rails-now"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

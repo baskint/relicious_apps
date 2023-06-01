@@ -1,37 +1,37 @@
 *.rbc
 capybara-*.html
 .rspec
-/db/*.sqlite3
-/db/*.sqlite3-journal
-/db/*.sqlite3-[0-9]*
-/public/system
-/coverage/
-/spec/tmp
+/rayols/db/*.sqlite3
+/rayols/db/*.sqlite3-journal
+/rayols/db/*.sqlite3-[0-9]*
+/rayols/public/system
+/rayols/coverage/
+/rayols/spec/tmp
 *.orig
 rerun.txt
 pickle-email-*.html
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/rayols/log/*
+/rayols/tmp/*
+!/rayols/log/.keep
+!/rayols/tmp/.keep
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
-config/initializers/secret_token.rb
-config/master.key
+rayols/config/initializers/secret_token.rb
+/rayols/config/master.key
 
 # Only include if you have production secrets in this file, which is no longer a Rails default
 # config/secrets.yml
 
 # dotenv, dotenv-rails
 # TODO Comment out these rules if environment variables can be committed
-.env
-.env*.local
+/rayols/.env
+/rayols/.env*.local
 
 ## Environment normalization:
-/.bundle
-/vendor/bundle
+/rayols/.bundle
+/rayols/vendor/bundle
 
 # these should all be checked in to normalize the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
@@ -40,7 +40,7 @@ config/master.key
 .rvmrc
 
 # if using bower-rails ignore default bower_components path bower.json files
-/vendor/assets/bower_components
+/rayols/vendor/assets/bower_components
 *.bowerrc
 bower.json
 
@@ -51,19 +51,19 @@ bower.json
 .byebug_history
 
 # Ignore node_modules
-node_modules/
+/rayols/node_modules/
 
 # Ignore precompiled javascript packs
-/public/packs
-/public/packs-test
-/public/assets
+/rayols/public/packs
+/rayols/public/packs-test
+/rayols/public/assets
 
 # Ignore yarn files
-/yarn-error.log
+/rayols/yarn-error.log
 yarn-debug.log*
 .yarn-integrity
 
 # Ignore uploaded files in development
-/storage/*
-!/storage/.keep
-/public/uploads
+/rayols/storage/*
+!/rayols/storage/.keep
+/rayols/public/uploads

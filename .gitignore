@@ -67,3 +67,37 @@ yarn-debug.log*
 /rayols/storage/*
 !/rayols/storage/.keep
 /rayols/public/uploads
+
+# phoebe no track
+# The directory Mix will write compiled artifacts to.
+/phoebe/_build/
+
+# If you run "mix test --cover", coverage assets end up here.
+/phoebe/cover/
+
+# The directory Mix downloads your dependencies sources to.
+/phoebe/deps/
+
+# Where 3rd-party dependencies like ExDoc output generated docs.
+/phoebe/doc/
+
+# Ignore .fetch files in case you like to edit your project deps locally.
+/phoebe/.fetch
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+/phoebe/erl_crash.dump
+
+# Also ignore archive artifacts (built via "mix archive.build").
+/phoebe/*.ez
+
+# Temporary files, for example, from tests.
+/phoebe/tmp/
+
+# Ignore package tarball (built via "mix hex.build").
+/phoebe/phoebe-*.tar
+
+# Database files
+/phoebe/*.db
+/phoebe/*.db-*
+
+

@@ -1,23 +1,25 @@
 # Relicious Apps
-This is a dual application configuration where we use JWT token with a shared key to authenticate between the apps. The JWT token has the payload:
+This is a dual application configuration where we use a JWT with a shared key to authenticate between the apps. The JWT has the following sample payload:
 ```
 { email: "John Doe", email: "john@example.com" }
 ```
 
 ## Rayols
-Payload sendig app - this is a Rails 7 application using Ruby 3.2.2. s
-First, `cd royals`, then using `rbenv`, we can configure the runtime environment for this as follow
+Payload sending app - this is a Rails 7 application using Ruby 3.2.2.
+First, `cd royals`, then using `rbenv`, we can configure the runtime environment for this as follows:
+
 1. `rbenv install 3.2.2`
 2. `gem install rails --version 7.0.0`
 3. `bundle install`
 
-Also create a `.env` file and add the below contents:
+Also create a `.env` file inside the `rayols` directory and add the below contents:
 `RAYOLS_JWT_SECRET="testing123"`
 
 After this, start the `rails server` at default port 3000.
 
 ## Phoebe
 Payload receiving app - this is Phoenix 1.7.3 application using Erlang 26.0 and  Elixir 1.14.5. First `cd phoebe`. Then using `asdf`, we can configure the runtime environment as follows:
+
 1. `asdf install erlang 26.0`
 2. `asdf install elixir 1.14.5`
 3. `asdf local erlang 26.0`

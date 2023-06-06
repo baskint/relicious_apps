@@ -34,6 +34,8 @@ This will start the API application port 4000. The JWT secret is contained in `d
 Once both apps are up running without issues, visit on a browser
 `http://localhost:3000` and click on `Authenticate` button.
 
+![rayols_authenticate](https://github.com/baskint/relicious_apps/assets/211107/a769ac7d-36a4-4f38-8687-7e5e3f28786a)
+
 Then go back to terminal on the Phoenix app, verify the payload is received successfully. Mismatch the signatures and verify that it fails. 
 
 ```

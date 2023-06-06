@@ -11,9 +11,20 @@ defmodule PhoebeWeb.AuthenticationController do
     json(conn, %{authenticated: authenticated})
   end
 
-   defp check_authentication(conn) do
-     true  # figure this out
-   end
+  defp check_authentication(conn) do
+    # figure this out
+    true
+  end
+
+  defp get_token_from_request(conn) do
+    case get_req_header(conn, "authorization") do
+      [header_value | _] ->
+        String.split(header_value, "Bearer ")[-1]
+
+      _ ->
+        nil
+    end
+  end
 
   # defp check_authentication(conn) do
   #   case validate_token(conn) do

@@ -12,7 +12,6 @@ config :phoebe,
 
 config :phoebe, :jwt_secret, {:system, "PHOEBE_JWT_SECRET"}
 
-
 # Configures the endpoint
 config :phoebe, PhoebeWeb.Endpoint,
   url: [host: "localhost"],

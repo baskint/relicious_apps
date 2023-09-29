@@ -47,6 +47,6 @@ received: John Doe john@example.com
 [info] Sent 200 in 83ms
 ```
 
-Let me know if you have areas for improvement. Thanks for checking it out.
+Let me know if you have ideas for improvement. Thanks for checking it out.
 
 Baskin Tapkan - June, 2023.
